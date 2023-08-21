@@ -9,12 +9,10 @@
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -32,7 +30,6 @@
 }
 
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -43,7 +40,6 @@
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -78,14 +74,12 @@
   color: white;
 }
 
-/* Add styles to images */
 .gallery-image {
   cursor: pointer;
   max-width: 100%;
   height: auto;
 }
 
-/* Hidden popup container */
 .image-popup {
   display: none;
   position: fixed;
@@ -98,7 +92,6 @@
   align-items: center;
 }
 
-/* Image inside the popup */
 .image-popup img {
   max-width: 90%;
   max-height: 90%;
