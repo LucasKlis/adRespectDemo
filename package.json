@@ -39,6 +39,7 @@
     "jiti": "^1.19.3",
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
+    "masonry-layout": "^4.2.2",
     "merge2": "^1.4.1",
     "micromatch": "^4.0.5",
     "minimatch": "^3.1.2",

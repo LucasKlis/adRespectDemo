@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,116 +7,310 @@
   <title>Strona główna</title>
   <link rel="stylesheet" href="/dist/output.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 
 </head>
 
 <body class="mx-auto max-w-[1440px] justify-center bg-white font-[Inter]">
   <header>
-    <nav class="bg-white justify-between mx-auto my-[27px] flex">
-      <div id="logo" class="ml-[89px] shrink-0 ">
+    <nav class="bg-white justify-between mx-auto my-8 grid grid-cols-2 max-xl:grid max-xl:grid-cols-1">
+      <div id="logo" class="ml-8 shrink-0 max-sm:justify-center max-sm:mx-auto">
         <img src="/public/giarddesign.svg" alt="logo">
       </div>
-      <div id="navigation" class="mr-[89px]">
+      <div id="navigation"
+        class="mr-8 text-right max-xl:ml-8 max-xl:mt-5 max-sm:text-left max-sm:justify-center max-sm:mx-2">
+        <div class="relative inline-block dropdown mr-4 max-sm:block sm:py-2 max-sm:my-2">
+          <button
+            class="dropdown-toggle no-underline bg-transparent border-none cursor-pointer hover:font-black">Oferta</button>
+          <div class="dropdown-menu absolute hidden mt-2 bg-white border z-10 ">
+            <a href="#Oferta" class="block px-4 py-2 text-black scroll-smooth">Cięcia</a>
+            <a href="#Oferta" class="block px-4 py-2 text-black scroll-smooth">Przycięcia</a>
+            <a href="#Oferta" class="block px-4 py-2 text-black scroll-smooth">Podcięcia</a>
+          </div>
+        </div>
 
-        <select>Oferta
-          <option value="title">Oferta</option>
-          <option value="projects">Projekty</option>
-          <option value="visualization">Wizualizacje</option>
-          <option value="realization">Realizacje</option>
-        </select>
-        <a href="/pages/about.html" class="mx-[48px]">O nas</a>
-        <a href="/pages/projects.html" class="mx-[48px]">Realizcje</a>
-        <a href="/pages/contact.html" class="mx-[48px]">Kontakt</a>
-        <img src="/public/search.svg" alt="search" class="inline">
-        <input id="searchInput" type="text" placeholder="">
-        </img>
+        <a href="#O firmie" class="mr-4 max-sm:block hover:font-black max-sm:my-2">O nas</a>
+        <a href="#Realizacje" class="mr-4 max-sm:block hover:font-black max-sm:my-2">Realizacje</a>
+        <a href="#CTA" class="mr-4 max-sm:block hover:font-black max-sm:my-2">Kontakt</a>
+        <img src="/public/search.svg" alt="search" class="inline cursor-pointer max-sm:block hover:font-black"></img>
+        <div class="relative">
+          <input type="text" class="hidden absolute top-0 right-0 mt-2 mr-2 px-3 py-1 border rounded-md z-10">
+        </div>
       </div>
-
     </nav>
+
   </header>
   <main>
-    <section id="offer" class="">
-
-
-
-      <div class="text-section">
-        <!-- Tu wstaw tytuł, tekst i przycisk -->
-      </div>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade grid grid-cols-2 gap-4">
-          <div id="left" class="col-span-1">
-            <h2 class="font-[Montserrat] font-medium text-[60px]">Nowoczesna aranżacja Twojego ogrodu</h2>
-            <p class="mt-[44px] text-[16px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres
+    <section id="Nawigacja" class="">
+      <div class="slideshow-container bg-[#DCC1AB]">
+        <div class="mySlides fade grid grid-cols-2 gap-4 max-xl:grid-cols-1  min-h-[737px]">
+          <div id="left" class="col-span-1 ml-[89px] mr-[64px] max-sm:mx-[10px] max-sm:text-center">
+            <h2 class="font-[Montserrat] font-medium sm:text-[60px] text-4xl leading-[60px] sm:mt-[160px] mt-[20px]">
+              Nowoczesna aranżacja Twojego
+              ogrodu</h2>
+            <p class="mt-[44px] text-[16px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres
               usługz indywidualnym podejściem do każdego projektu.</p>
-            <div class="grid grid-cols-2 mt-[64px]">
-            <button type="button"
-              class="rounded-full bg-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-             <p> Skontaktuj się z nami </p>
-            </button>
-            <button type="button"
-            class="rounded-full bg-transparent border-2 border-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-[#1B5B31] shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            <p> Zobacz nasze realizacje </p>
-          </button>
-        </div>
-            <div class="text">Caption Text</div>
+            <div class="grid grid-cols-2 max-lg:grid-cols-1 mt-[64px] gap-9 mb-[144px] mx-auto">
+              <button type="button"
+                class="rounded-full bg-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+                <p> Skontaktuj się z nami </p>
+              </button>
+              <button type="button"
+                class="rounded-full bg-transparent border-2 border-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <p> Zobacz nasze realizacje </p>
+              </button>
+            </div>
           </div>
           <div id="right" class="col-span-1">
             <img src="/public/slide1.webp" class="object-cover h-full">
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>          </div>
-        </div>
-
-        <div class="mySlides fade grid grid-cols-2 gap-4">
-          <div id="left" class="col-span-1 w-1/2">
-            <img src="/public/slide2.webp">
-            <div class="text">Caption Text</div>
-          </div>
-          <div id="right" class="col-span-1 w-1/2">
-            <img src="/public/slide2.webp">
-            <div class="text">Caption Text</div>
+            <a class="prev sm:right-[5%] max-sm:left-0 absolute hover:bg-transparent"
+              onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next right-0 rounded-sm absolute hover:bg-transparent" onclick="plusSlides(1)">&#10095;</a>
           </div>
         </div>
 
-        <div class="mySlides fade grid grid-cols-2 gap-4">
-          <div id="left" class="col-span-1 w-1/2">
-            <img src="/public/slide3.webp">
-            <div class="text">Caption Text</div>
+        <div class="mySlides fade grid grid-cols-2 gap-4 max-xl:grid-cols-1  min-h-[737px]">
+          <div id="left" class="col-span-1 ml-[89px] mr-[64px] max-sm:mx-[10px] max-sm:text-center">
+            <h2 class="font-[Montserrat] font-medium sm:text-[60px] text-4xl leading-[60px] sm:mt-[160px] mt-[20px]">
+              Zaprojektuj ogród
+              samodzielnie</h2>
+            <p class="mt-[44px] text-[16px]">To nie jest takie trudne! Poznaj podstawowe zasady projektowania ogrodu.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elit nec diam pulvinar malesuada ac ut
+              nisi. Phasellus mollis purus tellus, id varius nisl fermentum eget. Donec sagittis nisl diam. Proin non
+              augue ante.</p>
+            <div class="grid grid-cols-2 max-lg:grid-cols-1 mt-[64px] gap-9 mb-[144px] mx-auto">
+              <button type="button"
+                class="rounded-full bg-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+                <p> Skontaktuj się z nami </p>
+              </button>
+              <button type="button"
+                class="rounded-full bg-transparent border-2 border-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <p> Zobacz nasze realizacje </p>
+              </button>
+            </div>
           </div>
-          <div id="right" class="col-span-1 w-1/2">
-            <img src="/public/slide3.webp">
-            <div class="text">Caption Text</div>
+          <div id="right" class="col-span-1">
+            <img src="/public/slide2.webp" class="object-cover h-full">
+            <a class="prev sm:right-[5%] max-sm:left-0 absolute hover:bg-transparent"
+              onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next right-0 rounded-sm absolute hover:bg-transparent" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="mySlides fade grid grid-cols-2 gap-4 max-xl:grid-cols-1  min-h-[737px]">
+          <div id="left" class="col-span-1 ml-[89px] mr-[64px] max-sm:mx-[10px] max-sm:text-center">
+            <h2 class="font-[Montserrat] font-medium sm:text-[60px] text-4xl leading-[60px] sm:mt-[160px] mt-[20px]">Jak
+              uratować przesuszony
+              trawnik?</h2>
+            <p class="mt-[44px] text-[16px]">Co zrobić, gdy trawa na trawniku wyschła? Aliquam posuere sodales
+              convallis. Aenean ultrices nisl lectus, at dapibus metus laoreet et. In interdum ipsum non dolor
+              ullamcorper, in imperdiet nisi tincidunt. Quisque tempus elementum ex gravida pellentesque. Morbi vitae
+              dui nec est euismod mattis. </p>
+            <div class="grid grid-cols-2 max-lg:grid-cols-1 mt-[64px] gap-9 mb-[144px] mx-auto">
+              <button type="button"
+                class="rounded-full bg-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+                <p> Skontaktuj się z nami </p>
+              </button>
+              <button type="button"
+                class="rounded-full bg-transparent border-2 border-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <p> Zobacz nasze realizacje </p>
+              </button>
+            </div>
+          </div>
+          <div id="right" class="col-span-1">
+            <img src="/public/slide3.webp" class="object-cover h-full">
+            <a class="prev sm:right-[5%] max-sm:left-0 absolute hover:bg-transparent"
+              onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next right-0 rounded-sm absolute hover:bg-transparent" onclick="plusSlides(1)">&#10095;</a>
           </div>
         </div>
 
 
       </div>
       <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
+      <div style="text-align:center" class="hidden">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-      <script src="/slider.js"></script>
     </section>
-    <section id="projects" class="bg-[#DCC1AB]">
-      <p>Nasze projekty</p>
+    <section id="Oferta" class="bg-[#F5F0EC] -mt-6">
+      <div class="sm:ml-[200px] mx-10 sm:mr-[331px]">
+        <br>
+        <p class="text-[#1B5B31] mt-[120px] text-xs">Oferta</p>
+        <p class="text-[48px] mt-[16px]">Działamy <em>kompleksowo</em></p>
+        <p class="text-base mt-[32px]">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
+          ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a
+          na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+      </div>
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-[64px] mx-[64px] mt-[96px] items-center">
+        <div class="bg-white rounded-2xl mb-[160px]">
+          <div class="m-[40px] max-lg:mx-2">
+            <img src="/public/Icon1.svg" alt="pencil" class="mb-[32px]">
+            <p class="text-[28px]">Projekty</p>
+            <p class="text-sm max-w-[298px] mt-[12px]">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+              wykorzystaniem istniejącej przestrzeni.</p>
+            <button type="button"
+              class="border-b-2 border-[#1B5B31] bg-transparent p-2 hover:animate-pulse mt-[63px] pb-[14px] text-sm font-normal text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+              <p class="inline mr-[10px]"> Dowiedz się więcej </p>
+              <img src="/public/arrow.svg" alt="arrow" class="inline">
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl mb-[160px]">
+          <div class="m-[40px] max-lg:mx-2">
+            <img src="/public/Icon2.svg" alt="pencil" class="mb-[32px]">
+            <p class="text-[28px]">Wizualizacje</p>
+            <p class="text-sm max-w-[298px] mt-[12px]">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+              spaceru animowanego w technologii 3D.</p>
+            <button type="button"
+              class="border-b-2 border-[#1B5B31] bg-transparent p-2 hover:animate-pulse mt-[63px] pb-[14px] text-sm font-normal text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+              <p class="inline mr-[10px]"> Dowiedz się więcej </p>
+              <img src="/public/arrow.svg" alt="arrow" class="inline">
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl mb-[160px]">
+          <div class="m-[40px] max-lg:mx-2">
+            <img src="/public/Icon3.svg" alt="pencil" class="mb-[32px]">
+            <p class="text-[28px]">Realizacje</p>
+            <p class="text-sm max-w-[298px] mt-[12px]">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+              zaawansowanych technologii.</p>
+            <button type="button"
+              class="border-b-2 border-[#1B5B31] bg-transparent p-2 hover:animate-pulse mt-[63px] pb-[14px] text-sm font-normal text-[#1B5B31] shadow-sm hover:bg-[#f2f2f2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+              <p class="inline mr-[10px]"> Dowiedz się więcej </p>
+              <img src="/public/arrow.svg" alt="arrow" class="inline">
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="callToAction" class="bg-[#F5F0EC]">
-      <p>Zostańmy w kontackie!</p>
+    <section id="O firmie" class="bg-[#1B5B31] grid md:grid-cols-2 grid-cols-1 gap-[64px]">
+      <div>
+        <img src="/public/aboutPhoto1.webp" alt="garden" class="object-cover h-full w-full">
+      </div>
+      <div class="text-[#F5F0EC]">
+        <div class="my-[135px] ml-[96px] mr-[92px]">
+          <p class="text-xs">O firmie</p>
+          <p class="text-[48px]">Tworzymy z <em>pasją</em></p>
+          <p class="text-[16px]">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci
+            oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja
+            to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+            małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+          <button type="button"
+            class="rounded-full bg-transparent border-2 border-[#F5F0EC] px-[24px] mt-[72px] pt-[12px] pb-[14px] text-sm font-semibold text-[#F5F0EC] shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <p class="inline mr-[10px]"> Poznaj nas bliżej </p>
+            <img src="/public/arrowWhite.svg" alt="arrow" class="inline">
+
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="Realizacje" class="bg-[#DCC1AB] box-border">
+      <br>
+      <p class="text-xs text-[#1B5B31] mt-[120px] ml-[160px]">Realizacje</p>
+      <p class="text-[48px] mb-[96px] sm:ml-[160px] ml-[10px]">Nasze <em>projekty</em></p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 image-gallery">
+        <div class="grid gap-4">
+
+          <img src="/public/gallery/photo-1.webp" alt="photo-1" class="h-auto max-w-full gallery-image">
+          <img src="/public/gallery/photo-2.webp" alt="photo-2" class="h-auto max-w-full gallery-image">
+          <img src="/public/gallery/photo-3.webp" alt="photo-3" class="h-auto max-w-full gallery-image">
+        </div>
+        <div class="grid gap-4">
+
+          <img src="/public/gallery/photo-4.webp" alt="photo-4" class="h-auto max-w-full gallery-image">
+          <img src="/public/gallery/photo-5.webp" alt="photo-5" class="h-auto max-w-full gallery-image">
+          <img src="/public/gallery/photo-6.webp" alt="photo-6" class="h-auto max-w-full gallery-image">
+        </div>
+        <div class="grid gap-4">
+          <img src="/public/gallery/photo-7.webp" alt="photo-7" class="h-auto max-w-full galler-image">
+          <img src="/public/gallery/photo-8.webp" alt="photo-8" class="h-auto max-w-full gallery-image">
+          <img src="/public/gallery/photo-9.webp" alt="photo-9" class="h-auto max-w-full gallery-image">
+        </div>
+        <div class="col-span-3 bg-[#DCC1AB] items-center flex z-10 opacity-90 -mt-52" id="showMoreButton">
+          <button id="showMoreButton"
+            class="justify-center  mx-auto bg-transparent text-black border-2 border-black rounded-full px-4 py-2 font-normal mt-4 flex items-center">
+            <p class="mr-[10px]">Rozwiń</p>
+            <img src="/public/arrowDown.svg" alt="arrow down" class="inline">
+          </button>
+        </div>
+        <div class="grid gap-4">
+          <img src="/public/gallery/photo-10.webp" alt="photo-10" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-11.webp" alt="photo-11" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-12.webp" alt="photo-12" class="h-auto max-w-full hidden gallery-image">
+        </div>
+        <div class="grid gap-4">
+          <img src="/public/gallery/photo-13.webp" alt="photo-13" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-14.webp" alt="photo-14" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-15.webp" alt="photo-15" class="h-auto max-w-full hidden gallery-image">
+        </div>
+        <div class="grid gap-4">
+
+          <img src="/public/gallery/photo-16.webp" alt="photo-16" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-17.webp" alt="photo-17" class="h-auto max-w-full hidden gallery-image">
+          <img src="/public/gallery/photo-1.webp" alt="photo-1" class="h-auto max-w-full hidden gallery-image">
+        </div>
+    </section>
+    <section id="CTA" class="bg-[#1B5B31] grid sm:grid-cols-3 grid-cols-2  lg:mx-[200px] mx-[20px] my-[60px] items-center">
+      <div class="col-span-2 text-white md:ml-[110px] md:mt-[142px] md:mb-[120px] text-[40px] mx-[10px]">
+        <p>Zostańmy w kontakcie!</p>
+        <p>Znajdziesz nas na <em>Instagramie.</em></p>
+      </div>
+      <div class="col-span-1 text-white md:ml-[64px] md:my-[120px] mb-[10px] mt-[10px] text-[16px] mx-[10px]">
+        <p>Śledź nasze <br> najnowsze realizacje!</p>
+        <button type="button"
+          class="mt-[24px] rounded-full bg-[#F5F0EC] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+          <p class="text-[#1B5B31]"> Instagram </p>
+      </div>
     </section>
   </main>
 
-  <footer class="bg-black">
-    <p>Stopka</p>
+  <footer class="bg-black mt-[60px]">
+    <br>
+    <div class="grid sm:grid-cols-2 grid-cols-1  sm:mx-[200px] mx-auto sm:justify-between justify-center text-center items-center mt-[80px] md:mb-[224px] mb-[10px]">
+      <div>
+        <img src="/public/giarddesignWhite.svg" alt="white logo" class="shrink-0 max-sm:justify-center max-sm:mx-auto">
+      </div>
+      <div >
+        <p class="text-white inline mr-[24px] text-base">Daj znać co możemy dla Ciebie zrobić!</p>
+        <button type="button"
+          class="mt-[10px] rounded-full inline bg-[#1B5B31] px-[24px] pt-[12px] pb-[14px] text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+          <p> Skontaktuj się z nami </p>
+        </button>
+      </div>
+    </div>
+    <hr class="mx-[200px]">
+      <div class="text-white grid sm:grid-cols-2 grid-cols-1 sm:justify-between justify-self-center sm:mx-[200px] mx-[20px] max-sm:text-center md:mt-[62px] mt-[10px] text-sm md:mb-[120px] mb-[20px]">
+        <div>
+          <a href="/Kontakt" class="sm:mr-[48px]">Kontakt</a>
+          <a href="/Instagra," class="sm:mr-[48px]">Instagram</a>
+          <a href="/Facebook" class="sm:mr-[48px]">Facebook</a>
+          <a href="/LinkedIn">LinkedIn</a>
+        </div>
+        <div class="sm:justify-self-end justify-self-center max-sm:mt-[10px]">
+          <a href="/Telefon">000-000-000</a>
+          <a href="/Mail">giarddesign@kontakt.pl</a>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 grid-cols-1 text-white sm:mx-[200px] mx-[20px] mb-[80px]">
+        <div>
+        <p class="max-sm:text-center">Prawa zastrzeżone 2022 ©</p>
+      </div>
+        <div class="sm:justify-self-end justify-self-center">
+          <p class="inline ">made By</p>
+          <img src="/public/logo-full.svg" alt="logo footer" class="inline shrink-0 ">
+
+        </div>
+      </div>
+      <br>
+
   </footer>
+  <script src="/slider.js"></script>
 </body>
 
 </html>
